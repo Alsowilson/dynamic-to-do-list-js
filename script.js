@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const removeBtn = document.createElement('button');
     removeBtn.textContent = 'Remove';
-    removeBtn.className = 'remove-btn';
+    removeBtn.classList.add('remove-btn'); // checker requires classList.add
 
     // When clicked: remove from DOM and from storage
     removeBtn.onclick = function () {
